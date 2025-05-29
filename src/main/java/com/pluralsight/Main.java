@@ -1,35 +1,58 @@
 package com.pluralsight;
 
-import java.util.ArrayList;
-import java.util.List;
 import java.util.Scanner;
 
 public class Main {
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
-        List<Topping> selectedToppings = new ArrayList<>();
 
-        System.out.println("Welcome to BreadWinner!");
-        System.out.print("Enter sandwich size (4, 8, 12): ");
-        String sandwichSize = scanner.nextLine();
+        // Sandwich Setup
+        System.out.println("🥪 Welcome to BreadWinner 🥪");
+        System.out.print("Choose sandwich size (4, 8, 12): ");
+        String size = scanner.nextLine();
 
-        // Demo: Adding sample toppings
-        selectedToppings.add(new Meat("Turkey"));
-        selectedToppings.add(new Cheese("Swiss"));
-        selectedToppings.add(new RegularTopping("Lettuce"));
-        selectedToppings.add(new Sauce("Mayo"));
+        System.out.print("Choose bread (White, Wheat, Rye): ");
+        String bread = scanner.nextLine();
 
-        double totalToppingPrice = 0.0;
+        System.out.print("Toasted? (yes/no): ");
+        boolean toasted = scanner.nextLine().equalsIgnoreCase("yes");
 
-        System.out.println("\nYour Toppings:");
-        for (Topping topping : selectedToppings) {
-            double price = topping.getPrice(sandwichSize);
-            System.out.printf("- %s: $%.2f%n", topping.getToppingName(), price);
-            totalToppingPrice += price;
+        Sandwich sandwich = new Sandwich(size, bread, toasted);
+
+        // Toppings
+        System.out.println("Add toppings (type 'done' to finish):");
+        while (true) {
+            System.out.print("Enter topping (e.g., Turkey, Lettuce, Mayo): ");
+            String input = scanner.nextLine();
+            if (input.equalsIgnoreCase("done")) break;
+
+            if (input.equalsIgnoreCase("Turkey") || input.equalsIgnoreCase("Ham")) {
+                sandwich.addTopping(new Meat(input));
+            } else if (input.equalsIgnoreCase("Cheddar") || input.equalsIgnoreCase("Swiss")) {
+                sandwich.addTopping(new Cheese(input));
+            } else if (input.equalsIgnoreCase("Lettuce") || input.equalsIgnoreCase("Tomato")) {
+                sandwich.addTopping(new RegularTopping(input));
+            } else {
+                sandwich.addTopping(new Sauce(input));
+            }
         }
 
-        System.out.printf("Total Topping Cost: $%.2f%n", totalToppingPrice);
-        System.out.println("Thank you for using BreadWinner!");
+        // Drink
+        System.out.print("Drink size (small, medium, large): ");
+        String drinkSize = scanner.nextLine();
+
+        System.out.print("Drink flavor (Cola, Lemonade, etc.): ");
+        String drinkFlavor = scanner.nextLine();
+        Drink drink = new Drink(drinkSize, drinkFlavor);
+
+        // Chips
+        System.out.print("Chips type (e.g., BBQ, Salt & Vinegar): ");
+        String chipType = scanner.nextLine();
+        Chips chips = new Chips(chipType);
+
+        // Final Order
+        Order order = new Order(sandwich, drink, chips);
+        order.printReceipt();
 
         scanner.close();
     }
