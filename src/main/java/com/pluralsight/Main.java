@@ -9,7 +9,7 @@ public class Main {
         Scanner scanner = new Scanner(System.in);
         List<Topping> selectedToppings = new ArrayList<>();
 
-        System.out.println("🥪 Welcome to BreadWinner CLI Sandwich Builder! 🥪");
+        System.out.println("Welcome to BreadWinner!");
         System.out.print("Enter sandwich size (4, 8, 12): ");
         String sandwichSize = scanner.nextLine();
 
