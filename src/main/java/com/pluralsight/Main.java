@@ -7,7 +7,9 @@ public class Main {
         Scanner scanner = new Scanner(System.in);
 
         // Sandwich Setup
-        System.out.println("🥪 Welcome to BreadWinner 🥪");
+        System.out.println("Welcome to BreadWinner");
+        System.out.print("Enter your name: ");
+        String customerName = scanner.nextLine();
         System.out.print("Choose sandwich size (4, 8, 12): ");
         String size = scanner.nextLine();
 
@@ -22,7 +24,7 @@ public class Main {
         // Toppings
         System.out.println("Add toppings (type 'done' to finish):");
         while (true) {
-            System.out.print("Enter topping (e.g., Turkey, Lettuce, Mayo): ");
+            System.out.print("Enter topping (Turkey, Lettuce, Mayo): ");
             String input = scanner.nextLine();
             if (input.equalsIgnoreCase("done")) break;
 
@@ -46,7 +48,7 @@ public class Main {
         Drink drink = new Drink(drinkSize, drinkFlavor);
 
         // Chips
-        System.out.print("Chips type (e.g., BBQ, Salt & Vinegar): ");
+        System.out.print("Chips type (BBQ, Salt & Vinegar): ");
         String chipType = scanner.nextLine();
         Chips chips = new Chips(chipType);
 
@@ -55,5 +57,8 @@ public class Main {
         order.printReceipt();
 
         scanner.close();
+
+        ReceiptManager.saveReceipt(order, customerName);
+
     }
 }

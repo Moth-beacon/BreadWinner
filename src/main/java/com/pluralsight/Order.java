@@ -30,4 +30,14 @@ public class Order {
     private String chipTypeSafe() {
         return (chips != null) ? chips.getPrice() > 0 ? "Chips included" : "None" : "None";
     }
+    public String getReceiptText() {
+        StringBuilder sb = new StringBuilder();
+        sb.append(sandwich.getDetails());
+        sb.append(String.format("Drink: $%.2f%n", drink.getPrice()));
+        sb.append(String.format("Chips: $%.2f%n", chips.getPrice()));
+        sb.append(String.format("TOTAL: $%.2f%n", getTotalPrice()));
+        return sb.toString();
+    }
+
 }
+
