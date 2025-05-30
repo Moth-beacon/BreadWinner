@@ -1,0 +1,14 @@
+BreadWinner Receipt 
+Customer: Moth Test 6
+
+8" Wrap (toasted) with toppings:
+- Extra Steak ($1.00)
+- Extra Swiss ($0.60)
+- lettuce ($0.00)
+- mayo ($0.00)
+Sandwich subtotal: $8.60
+Drink: cola ($2.00)
+Chips: BBQ ($1.50)
+TOTAL: $12.10
+
+Thank you for ordering from BreadWinner!

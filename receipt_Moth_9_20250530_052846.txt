@@ -1,0 +1,26 @@
+BreadWinner Receipt 
+Customer: Moth 9
+
+========== BreadWinner Receipt ==========
+Sandwich: 8" Rye (toasted) - Base: $7.00
+Meats:
+  - Extra Turkey           $1.00
+  - Extra Steak            $1.00
+  - Extra Roast beef       $1.00
+Cheeses:
+  - Extra Swiss            $0.60
+  - Extra Swiss            $0.60
+Toppings:
+  - onions                 $0.00
+Sauces:
+  - ranch                  $0.00
+------------------------------------------
+Sandwich Subtotal:      $11.20
+Drink: cola                 $2.00
+Chips: BBQ                  $1.50
+------------------------------------------
+TOTAL:                           $14.70
+==========================================
+Thank you for choosing BreadWinner! We hope to see you again.
+
+Thank you for ordering from BreadWinner!

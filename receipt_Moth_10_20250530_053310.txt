@@ -1,0 +1,15 @@
+BreadWinner Receipt 
+Customer: Moth 10
+
+========== BreadWinner Receipt ==========
+Sandwich: 8" Rye (toasted) - Base: $7.00
+------------------------------------------
+Sandwich Subtotal:      $7.00
+Drink: cola                 $2.00
+Chips: BBQ                  $1.50
+------------------------------------------
+TOTAL:                           $10.50
+==========================================
+Thank you for choosing BreadWinner! We hope to see you again.
+
+Thank you for ordering from BreadWinner!

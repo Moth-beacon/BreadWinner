@@ -17,4 +17,8 @@ public class Drink {
             default: return 0.00;
         }
     }
+    public String getFlavor() {
+        return drinkFlavor;
+    }
+
 }

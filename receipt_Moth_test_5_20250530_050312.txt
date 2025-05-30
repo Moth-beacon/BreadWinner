@@ -1,0 +1,14 @@
+BreadWinner Receipt 
+Customer: Moth test 5
+
+8" Wrap (toasted) with toppings:
+- Turkey ($2.0)
+- mayo ($0.0)
+- swiss ($1.5)
+- extra ($0.0)
+- swiss ($1.5)
+Drink: $2.00
+Chips: $1.50
+TOTAL: $15.50
+
+Thank you for ordering from BreadWinner!

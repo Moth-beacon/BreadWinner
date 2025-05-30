@@ -16,28 +16,26 @@ public class Order {
     }
 
     public void printReceipt() {
-        System.out.println("🧾 Receipt:");
-        System.out.println(sandwich.getDetails());
-        System.out.printf("Drink: %s ($%.2f)%n", drinkFlavorSafe(), drink.getPrice());
-        System.out.printf("Chips: %s ($%.2f)%n", chipTypeSafe(), chips.getPrice());
-        System.out.printf("TOTAL: $%.2f%n", getTotalPrice());
+        System.out.println("\n========== Bread Winner Receipt ==========");
+        System.out.println(sandwich.getFormattedDetails());
+        System.out.printf("Drink: %-20s $%.2f%n", drink.getFlavor(), drink.getPrice());
+        System.out.printf("Chips: %-20s $%.2f%n", chips.getType(), chips.getPrice());
+        System.out.println("------------------------------------------");
+        System.out.printf("TOTAL: %-25s $%.2f%n", "", getTotalPrice());
+        System.out.println("==========================================");
+        System.out.println("Thank you for choosing Bread Winner! We hope to see you again.\n");
     }
 
-    private String drinkFlavorSafe() {
-        return (drink != null) ? drink.getPrice() > 0 ? "Drink included" : "None" : "None";
-    }
-
-    private String chipTypeSafe() {
-        return (chips != null) ? chips.getPrice() > 0 ? "Chips included" : "None" : "None";
-    }
     public String getReceiptText() {
         StringBuilder sb = new StringBuilder();
-        sb.append(sandwich.getDetails());
-        sb.append(String.format("Drink: $%.2f%n", drink.getPrice()));
-        sb.append(String.format("Chips: $%.2f%n", chips.getPrice()));
-        sb.append(String.format("TOTAL: $%.2f%n", getTotalPrice()));
+        sb.append("========== Bread Winner Receipt ==========\n");
+        sb.append(sandwich.getFormattedDetails());
+        sb.append(String.format("Drink: %-20s $%.2f%n", drink.getFlavor(), drink.getPrice()));
+        sb.append(String.format("Chips: %-20s $%.2f%n", chips.getType(), chips.getPrice()));
+        sb.append("------------------------------------------\n");
+        sb.append(String.format("TOTAL: %-25s $%.2f%n", "", getTotalPrice()));
+        sb.append("==========================================\n");
+        sb.append("Thank you for choosing Bread Winner! We hope to see you again.\n");
         return sb.toString();
     }
-
 }
-

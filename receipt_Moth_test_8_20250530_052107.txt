@@ -1,0 +1,19 @@
+BreadWinner Receipt 
+Customer: Moth test 8
+
+8" Rye (toasted) with toppings:
+- Extra Bacon ($1.00)
+- Extra Ham ($1.00)
+- Extra Steak ($1.00)
+- lettuce ($0.00)
+- tomato ($0.00)
+- peppers ($0.00)
+- mayo ($0.00)
+- ranch ($0.00)
+- thousand islands ($0.00)
+Sandwich subtotal: $10.00
+Drink: cola ($2.00)
+Chips: BBQ ($1.50)
+TOTAL: $13.50
+
+Thank you for ordering from BreadWinner!
