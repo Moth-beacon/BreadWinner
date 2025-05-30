@@ -10,7 +10,7 @@ public class Main {
         boolean running = true;
 
         while (running) {
-            System.out.println("\n=== BreadWinner Menu ===");
+            System.out.println("\n=== Bread Winner Menu ===");
             System.out.println("1. Start a new order");
             System.out.println("2. Exit");
             System.out.print("Enter your choice: ");
@@ -21,7 +21,7 @@ public class Main {
                     startOrder(scanner);
                     break;
                 case "2":
-                    System.out.println("Thank you for visiting BreadWinner!");
+                    System.out.println("Thank you for visiting Bread Winner!");
                     running = false;
                     break;
                 default:

@@ -1,0 +1,27 @@
+BreadWinner Receipt 
+Customer: potato
+
+========== Bread Winner Receipt ==========
+Sandwich: 8" Rye (toasted) - Base: $7.00
+Meats:
+  - Ham                    $2.00
+  - Extra Ham              $1.00
+Cheeses:
+  - Swiss                  $1.50
+  - Extra Swiss            $0.60
+Toppings:
+  - lettuce                $0.00
+Sauces:
+  - mayo                   $0.00
+  - mayo                   $0.00
+  - mayo                   $0.00
+------------------------------------------
+Sandwich Subtotal:      $12.10
+Drink: cola                 $2.00
+Chips: BBQ                  $1.50
+------------------------------------------
+TOTAL:                           $15.60
+==========================================
+Thank you for choosing Bread Winner! We hope to see you again.
+
+Thank you for ordering from BreadWinner!

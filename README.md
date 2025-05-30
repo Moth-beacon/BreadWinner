@@ -52,6 +52,13 @@ The application follows a clean, modular structure with appropriate use of abstr
 
 ---
 
+## Resources
+- Raymond cheat sheets
+- w3schools
+- Stack overflow
+
+---
+
 ## Code Highlight
 
 ```java

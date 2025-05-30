@@ -13,10 +13,10 @@ public class ReceiptManager {
         String fileName = "receipt_" + sanitizedName + "_" + getTimeStamp() + ".txt";
 
         try (FileWriter writer = new FileWriter(fileName)) {
-            writer.write("BreadWinner Receipt \n");
+            writer.write("Bread Winner Receipt \n");
             writer.write("Customer: " + customerName + "\n\n");
             writer.write(order.getReceiptText());
-            writer.write("\nThank you for ordering from BreadWinner!\n");
+            writer.write("\nThank you for ordering from Bread Winner!\n");
             System.out.println("Receipt saved as " + fileName);
         } catch (IOException e) {
             System.out.println("Error saving receipt: " + e.getMessage());
