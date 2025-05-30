@@ -43,7 +43,7 @@ public class Main {
         System.out.print("Drink size (small, medium, large): ");
         String drinkSize = scanner.nextLine();
 
-        System.out.print("Drink flavor (Cola, Lemonade, etc.): ");
+        System.out.print("Drink flavor (Cola, Lemonade): ");
         String drinkFlavor = scanner.nextLine();
         Drink drink = new Drink(drinkSize, drinkFlavor);
 

@@ -1,0 +1,13 @@
+BreadWinner Receipt 
+Customer: Moth 4
+
+8" Wheat (toasted) with toppings:
+- Turkey ($2.0)
+- Swiss ($1.5)
+- Lettuce ($0.0)
+- Mayo ($0.0)
+Drink: $2.50
+Chips: $1.50
+TOTAL: $14.50
+
+Thank you for ordering from BreadWinner!
